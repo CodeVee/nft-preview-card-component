@@ -25,14 +25,31 @@ body, html {
   border-radius: 1.5rem;
   padding: 2.4rem 2.4rem 3.2rem;
 }
+.card .mask {
+  background: hsl(178deg, 100%, 50%);
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  border-radius: 0.8rem;
+  opacity: 0.5;
+}
 .card__img {
   width: 100%;
   height: 30.2rem;
   margin-bottom: 2.4rem;
+  cursor: pointer;
+  position: relative;
 }
 .card__img > img {
   width: 100%;
   border-radius: 0.8rem;
+}
+.card__img:hover .mask {
+  display: flex;
 }
 .card__header {
   font-weight: 600;
@@ -40,6 +57,10 @@ body, html {
   line-height: 2.8rem;
   margin-bottom: 1.6rem;
   color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+.card__header:hover {
+  color: hsl(178deg, 100%, 50%);
 }
 .card__text {
   font-weight: 300;
@@ -94,6 +115,10 @@ body, html {
 }
 .card__creator span {
   color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+.card__creator span:hover {
+  color: hsl(178deg, 100%, 50%);
 }
 
 @media screen and (max-width: 1280px) {

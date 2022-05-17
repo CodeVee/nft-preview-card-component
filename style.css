@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-size: 10px;
+  font-family: "Outfit", sans-serif;
+}
+
+.main {
+  background: hsl(217deg, 54%, 11%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: hsl(216deg, 50%, 16%);
+  box-shadow: 0px 25px 50px 0px hsla(0deg, 0%, 0%, 0.1);
+  width: 35rem;
+  height: 59.6rem;
+  border-radius: 1.5rem;
+  padding: 2.4rem 2.4rem 3.2rem;
+}
+.card .mask {
+  background: hsl(178deg, 100%, 50%);
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  border-radius: 0.8rem;
+  opacity: 0.5;
+}
+.card__img {
+  width: 100%;
+  height: 30.2rem;
+  margin-bottom: 2.4rem;
+  cursor: pointer;
+  position: relative;
+}
+.card__img > img {
+  width: 100%;
+  border-radius: 0.8rem;
+}
+.card__img:hover .mask {
+  display: flex;
+}
+.card__header {
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  margin-bottom: 1.6rem;
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+.card__header:hover {
+  color: hsl(178deg, 100%, 50%);
+}
+.card__text {
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  color: hsl(215deg, 51%, 70%);
+  margin-bottom: 2.4rem;
+}
+.card__numbers {
+  display: flex;
+  margin-bottom: 2.4rem;
+}
+.card__numbers > img:first-of-type {
+  margin-right: 0.648rem;
+}
+.card__numbers > img:last-of-type {
+  margin-right: 0.77rem;
+}
+.card__number {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+.card__number--value {
+  color: hsl(178deg, 100%, 50%);
+  font-weight: 600;
+  margin-right: auto;
+}
+.card__number--time {
+  color: hsl(215deg, 51%, 70%);
+  font-weight: 400;
+}
+.card__line {
+  height: 1px;
+  background: hsl(215deg, 32%, 27%);
+  margin-bottom: 1.6rem;
+}
+.card__profile {
+  display: flex;
+  align-items: center;
+}
+.card__avatar {
+  border-radius: 50%;
+  height: 3.3rem;
+  width: 3.3rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+}
+.card__creator {
+  margin-left: 1.6rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: hsl(215deg, 51%, 70%);
+}
+.card__creator span {
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+.card__creator span:hover {
+  color: hsl(178deg, 100%, 50%);
+}
+
+@media screen and (max-width: 1280px) {
+  body, html {
+    font-size: 8.89px;
+  }
+}
+@media screen and (max-width: 430px) {
+  body, html {
+    font-size: 11.04px;
+  }
+
+  .card {
+    width: 32.7rem;
+    height: 54.7rem;
+    padding: 2.4rem 2.5rem 2.4rem 2.4rem;
+  }
+  .card__img {
+    height: 27.8rem;
+  }
+  .card__header {
+    margin-bottom: 1.2rem;
+  }
+  .card__text {
+    margin-bottom: 1.6rem;
+  }
+  .card__numbers {
+    margin-bottom: 1.6rem;
+  }
+  .card__number {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+  .card__creator {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  body, html {
+    font-size: 10px;
+  }
+}
